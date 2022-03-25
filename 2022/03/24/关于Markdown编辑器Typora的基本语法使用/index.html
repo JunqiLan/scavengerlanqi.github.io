@@ -15,11 +15,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Typora基本使用1.Markdown相关介绍123&#x2F;&#x2F;Markdown 语言  Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。  由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，许多网站都广泛使用Markdown来撰写帮助文">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img2.baidu.com/it/u=1828926323,3869676435&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500">
+<meta property="og:image" content="http://example.com/%5Csource_posts%5CSpaderman.jpg">
 <meta property="article:published_time" content="2022-03-24T08:50:49.000Z">
-<meta property="article:modified_time" content="2022-03-24T09:48:41.215Z">
+<meta property="article:modified_time" content="2022-03-25T15:31:27.953Z">
 <meta property="article:author" content="Scavenger.lanqi">
 <meta property="article:tag" content="Typora">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2.baidu.com/it/u=1828926323,3869676435&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -189,7 +192,80 @@
 
 <h3 id="3-1python"><a href="#3-1python" class="headerlink" title="3.1python"></a>3.1python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#字符串的常用操作</span></span><br><span class="line"><span class="comment">#replace   join</span></span><br><span class="line">s = <span class="string">&#x27;hello,python&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s.replace(<span class="string">&#x27;python&#x27;</span>,<span class="string">&#x27;java&#x27;</span>))</span><br><span class="line">s1 = <span class="string">&#x27;hello,python,python,python&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(s1.replace(<span class="string">&#x27;python&#x27;</span>,<span class="string">&#x27;java&#x27;</span>,<span class="number">2</span>))</span><br><span class="line"><span class="comment">#join  列表或元组</span></span><br><span class="line">lst = [<span class="string">&#x27;hello&#x27;</span> , <span class="string">&#x27;world&#x27;</span>, <span class="string">&#x27;python&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>.join(lst))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;&#x27;</span>.join(lst))</span><br><span class="line"><span class="comment">#元组</span></span><br><span class="line">t = (<span class="string">&#x27;hello&#x27;</span>,<span class="string">&#x27;java&#x27;</span>,<span class="string">&#x27;hi&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;&#x27;</span>.join(t))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;*&#x27;</span>.join(<span class="string">&#x27;python&#x27;</span>))<span class="comment">#将python当作序列（有每个字母构成）</span></span><br><span class="line">//注 为copy 本人之前初学代码</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-2-shell-脚本"><a href="#3-2-shell-脚本" class="headerlink" title="3.2 shell 脚本"></a>3.2 shell 脚本</h3>
+<h3 id="3-2-shell-脚本"><a href="#3-2-shell-脚本" class="headerlink" title="3.2 shell 脚本"></a>3.2 shell 脚本</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//这个不好赘述，作者也有点晕，希望网友可以指点。不好意思~~~</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-标题"><a href="#4-标题" class="headerlink" title="4.标题"></a>4.标题</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//标题级数</span><br><span class="line"><span class="comment">#一级标题</span></span><br><span class="line"><span class="comment">##二级标题</span></span><br><span class="line"><span class="comment">###三级标题</span></span><br><span class="line"><span class="comment">####四级标题</span></span><br><span class="line"><span class="comment">#####五级标题</span></span><br><span class="line"><span class="comment">######六级标题</span></span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F;标题级数  示例：</p>
+<p>#一级标题<br>##二级标题<br>###三级标题<br>####四级标题<br>#####五级标题<br>######六级标题</p>
+<h2 id="5-字体语法"><a href="#5-字体语法" class="headerlink" title="5.字体语法"></a>5.字体语法</h2><figure class="highlight plaintext"><figcaption><span>hon</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#加粗 **字体**</span><br><span class="line">#倾斜  *倾斜*</span><br><span class="line">#斜体加粗  ***斜体加粗***</span><br><span class="line">#删除线   ~~删除线~~</span><br><span class="line">#高亮   ==高亮==  </span><br><span class="line">#上标  ^字体^</span><br><span class="line">#下标   ~下标~</span><br><span class="line">//注意中英文字符</span><br><span class="line">// (如果试验后高亮与上下标没有变化，可能是文件-偏好设置中为在Markdown扩展语法中未对几项打对勾)</span><br></pre></td></tr></table></figure>
+
+<p>**字体 ** <em>倾斜</em> <em><strong>斜体加粗</strong></em> <del>删除线</del>&#x3D;&#x3D;高亮&#x3D;&#x3D;   ^字体^ <del>下标</del></p>
+<h2 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//列表分为有序列表  无序列表</span><br><span class="line">本人习惯用*号</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>云想衣裳花想容，</li>
+</ul>
+<ul>
+<li><p>春风拂槛露华浓。</p>
+</li>
+<li><p>若非群玉山头见，</p>
+</li>
+<li><p>会向瑶台月下逢</p>
+<ol>
+<li><p>云想衣裳花想容，</p>
+</li>
+<li><p>春风拂槛露华浓。</p>
+</li>
+<li><p>若非群玉山头见，</p>
+</li>
+<li><p>会向瑶台月下逢</p>
+</li>
+</ol>
+<h2 id="7-表格"><a href="#7-表格" class="headerlink" title="7.表格"></a>7.表格</h2>   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|标题一|标题二|标题三|标题四|标题五|</span><br><span class="line">|    -|----  |---- |------|-----|</span><br><span class="line">|<span class="number">1</span>    |<span class="number">2</span>     | <span class="number">3</span>   |   <span class="number">4</span>  |  <span class="number">5</span>  |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>标题一</th>
+<th>标题二</th>
+<th>标题三</th>
+<th>标题四</th>
+<th>标题五</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="8-引用"><a href="#8-引用" class="headerlink" title="8.引用"></a>8.引用</h2>   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//&gt;</span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line">&gt;&gt;&gt;&gt;</span><br><span class="line">&gt;云想衣裳花想容，</span><br><span class="line">&gt;&gt;春风拂槛露华浓。</span><br><span class="line">&gt;&gt;&gt;若非群玉山头见，</span><br><span class="line">&gt;&gt;&gt;&gt;会向瑶台月下逢</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>云想衣裳花想容，</p>
+<blockquote>
+<p>春风拂槛露华浓。</p>
+<blockquote>
+<p>若非群玉山头见，</p>
+<blockquote>
+<p>会向瑶台月下逢</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="9-分割线"><a href="#9-分割线" class="headerlink" title="9.分割线"></a>9.分割线</h2>   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//连字符组成 ---------------</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-照片引用"><a href="#10-照片引用" class="headerlink" title="10.照片引用"></a>10.照片引用</h2>   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//一般分为两种</span><br><span class="line"><span class="number">1.</span>插入网页照片</span><br><span class="line"><span class="number">2.</span>插入本地照片</span><br><span class="line"><span class="number">1.</span></span><br><span class="line">可以在具栏直接插入照片，也是以用快捷键（据自身电脑操作系统mac_os windows Linux等）</span><br><span class="line">还可以使用！[网页照片](右键复制图片地址)</span><br><span class="line"><span class="number">2.</span>本地照片</span><br><span class="line">![本地照片](地址路径)</span><br></pre></td></tr></table></figure>
+
+<p>   <img src="https://img2.baidu.com/it/u=1828926323,3869676435&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="网页太空人照片"></p>
+</li>
+</ul>
+<p>&#x3D;&#x3D;<em><strong>本地照片</strong></em>&#x3D;&#x3D;</p>
+<p><img src="/%5Csource_posts%5CSpaderman.jpg" alt="我的本地蜘蛛侠照片"></p>
+
       
 
       
