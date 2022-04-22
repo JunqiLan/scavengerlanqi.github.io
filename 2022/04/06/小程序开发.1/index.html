@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="微信小程序开发Day1Part1 小程序起步12简介：小程序开发和普通网页开发的区别（三大不同）   1..运行环境不同：小程序运行在微信环境中，网页运行在浏览器环境中  2.API不同  ，由于运行环境的不同，在小程序中无法调用DOM和BOM的API，但是，小程序可以调用微信环境提供的各种API，例如：地理定位，扫码，支付等  3.开发模式不同：     网页开发模式：浏览器+代码编辑器   小">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://example.com/2022/04/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91.1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="微信小程序开发Day1Part1 小程序起步12简介：小程序开发和普通网页开发的区别（三大不同）   1..运行环境不同：小程序运行在微信环境中，网页运行在浏览器环境中  2.API不同  ，由于运行环境的不同，在小程序中无法调用DOM和BOM的API，但是，小程序可以调用微信环境提供的各种API，例如：地理定位，扫码，支付等  3.开发模式不同：     网页开发模式：浏览器+代码编辑器   小">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-06T14:54:19.846Z">
+<meta property="article:modified_time" content="2022-04-10T13:51:53.965Z">
 <meta property="article:author" content="Scavenger.lanqi">
 <meta name="twitter:card" content="summary">
   
@@ -150,258 +154,254 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-小程序开发.1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="微信小程序开发Day1"><a href="#微信小程序开发Day1" class="headerlink" title="微信小程序开发Day1"></a>微信小程序开发Day1</h1><h2 id="Part1-小程序起步"><a href="#Part1-小程序起步" class="headerlink" title="Part1 小程序起步"></a>Part1 小程序起步</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">简介：</span><br><span class="line">小程序开发和普通网页开发的区别（三大不同）</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>1.</strong>.运行环境不同：小程序运行在微信环境中，网页运行在浏览器环境中</p>
+</li>
+<li><p><strong>2</strong>.API不同  ，由于运行环境的不同，在小程序中无法调用DOM和BOM的API，但是，小程序可以调用微信环境提供的各种API，例如：地理定位，扫码，支付等</p>
+</li>
+<li><p><strong>3</strong>.开发模式不同：</p>
+</li>
+</ul>
+<p>  网页开发模式：浏览器+代码编辑器</p>
+<p>  小程序标准开发模式：</p>
+<p>  1.申请小程序开发账号</p>
+<p>  2.安装小程序开发者工具</p>
+<p>  3.创建和配置小程序项目</p>
+<p>  <em><strong>API介绍</strong></em><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1586026960877760125&wfr=spider&for=pc">转自百度</a></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>小程序开发账号注册</span><br><span class="line">(主题类型：若为个人类型，则不支持微信认证，微信支付及高级接口能力)</span><br><span class="line">目的：为了获取小程序的<span class="variable constant_">APPID</span>  开发---&gt;开发设置---&gt;<span class="variable constant_">APPID</span>获取</span><br><span class="line">首先安装</span><br><span class="line"><span class="number">2.</span>下载微信开发者工具</span><br><span class="line"><span class="number">3.</span>扫码登陆</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/wxamp/home/guide?lang=zh_CN&token=502437888">账号注册网址</a></p>
+<p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信开发工具网址</a></p>
+<p><strong>微信开发工具（稳定版下载）作用</strong></p>
+<ul>
+<li>快速创建小程序项目</li>
+<li>代码的查看和编辑（不推荐使用vscode，它单纯的是一个代码编辑器）</li>
+<li>对小程序功能进行调试</li>
+<li>小程序的预览和发布</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">填写相关信息</span><br><span class="line">如果没有<span class="variable constant_">APPID</span>，可以注册也可以使用体验号</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置外观和代理"><a href="#设置外观和代理" class="headerlink" title="设置外观和代理"></a>设置外观和代理</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在设置中 外观改动  代理改动（由默认代理改为：不受任何代理，勾选后直连网络）</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建小程序项目"><a href="#创建小程序项目" class="headerlink" title="创建小程序项目"></a>创建小程序项目</h2><p>点击+号，新建小程序项目，（新建存放目录，APPID填写，后端服务：先选用不使用云服务    语言模式选择（JavaScript））</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">查看小程序效果</span><br><span class="line">方法一：在模拟器上查看效果（工具自带，直接点击编译查看）</span><br><span class="line">方法二：在手机上预览项目效果（）点击预览按钮，扫码查看</span><br></pre></td></tr></table></figure>
+
+<p>主界面的五个部分：菜单栏  工具栏  模拟器  代码编辑区  调试区</p>
+<h2 id="Part-2-小程序代码构成"><a href="#Part-2-小程序代码构成" class="headerlink" title="Part 2 小程序代码构成"></a>Part 2 小程序代码构成</h2><ul>
+<li><ol>
+<li><strong>pages 用来存放所有小程序的页面</strong></li>
+<li>utils 用来存放工具性质的模块（例如：“格式化时间的自定义模块”）</li>
+<li><strong>app.js 小程序项目入口文件</strong></li>
+<li><strong>app.json 小程序项目的全局配置文件</strong></li>
+<li>app.wxss 小程序项目的全局样式文件</li>
+<li>project.config.json 项目配置文件</li>
+<li>sitemap.json用来配置小程序及其页面是否允许被微信索引</li>
+</ol>
+</li>
+</ul>
+<p>​           </p>
+<h3 id="Part-2-1小程序页面的组成部分"><a href="#Part-2-1小程序页面的组成部分" class="headerlink" title="Part 2 .1小程序页面的组成部分"></a>Part 2 .1小程序页面的组成部分</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#官方建议将所有小程序页面都存放在pages目录中，已单独的文件夹存在</span><br><span class="line">#每个页面有四个基本文件组成，并且已单独的文件夹存在</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>1.<strong>.js文件（页面的脚本文件，存放页面的数据、事件处理函数等）</strong></p>
+</li>
+<li><p>2.<strong>.json文件（当前页面的配置文件，配置窗口的外观、表现等）</strong></p>
+</li>
+<li><p>3.<strong>wxml文件（页面的模板结构文件）</strong></p>
+</li>
+<li><p>4.<strong>wxss文件（当前页面的样式表文件）</strong></p>
+<p>​</p>
+</li>
+</ul>
+<h3 id="1-JSON配置文件"><a href="#1-JSON配置文件" class="headerlink" title="1.JSON配置文件"></a>1.JSON配置文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#<span class="title class_">JSON</span>是一种数据格式，在实际开发中，<span class="title class_">JSON</span>总是以配置文件的形式出现。小程序项目中也不例外：通过不同的.<span class="property">JSON</span>配置文件，可以对小程序项目进行不同级别的配置。</span><br></pre></td></tr></table></figure>
+
+<p>小程序中有四种.json的配置文件，分别是：</p>
+<ul>
+<li><p>项目根目录中的app.json配置文件(全局配置文件)</p>
+</li>
+<li><p>项目根目录中的project.config.json配置文件</p>
+</li>
+<li><p>项目根目录中的sitemap.json配置文件</p>
+</li>
+<li><p><strong>每个文件夹中的.json配置文件</strong></p>
+<h4 id="2-APP-json文件（全局配置文件）"><a href="#2-APP-json文件（全局配置文件）" class="headerlink" title="2. APP.json文件（全局配置文件）"></a>2. APP.json文件（全局配置文件）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#app.<span class="property">json</span>是当前小程序的全局配置，包括了小程序的所有页面路径、窗口外观、界面表现、底部tab等</span><br></pre></td></tr></table></figure>
+
+<p>Demo项目里边的app.json配置如下：</p>
+<p><strong>作用</strong></p>
+<ul>
+<li><p><strong>1.pages：</strong>用来记录当前小程序所有的页面路径</p>
+</li>
+<li><p>**2.window:**全局定义小程序所有页面的背景色、文字颜色等</p>
+</li>
+<li><p>**3.style:**全局定义小程序组件所使用的样式模板</p>
+</li>
+<li><p><strong>4.sitemapLocation</strong>用来指明 sitemap.json的位置</p>
+<p>​</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-project-config-json文件"><a href="#3-project-config-json文件" class="headerlink" title="3.   project.config.json文件"></a>3.   project.config.json文件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#project.<span class="property">config</span>.<span class="property">json</span>是项目配置文件，用来记录我们对小程序开发工具所做的个性化设置，例如</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>setting</strong>中保存了<strong>编译相关的配置</strong></p>
+</li>
+<li><p><strong>projectname</strong>中保存的是项目名称</p>
+</li>
+<li><p><strong>Appid</strong>中保存的是小程序的账号<strong>ID</strong></p>
+<p>​</p>
+</li>
+</ul>
+<h4 id="4-sitemap-json文件"><a href="#4-sitemap-json文件" class="headerlink" title="4. sitemap.json文件"></a>4. sitemap.json文件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#微信现已开放的小程序内搜索，效果类似于pc网页的<span class="variable constant_">SEO</span>。sitemap.<span class="property">json</span>文件用来配置小程序页面是否允许微信索引。解释：当开发者允许微信索引时，微信会通过爬虫的形式，为小程序页面内容建立索引。当用户的搜索关键字和也页面的索引匹配成功时，小程序页面将可能展现在搜索结果中。</span><br></pre></td></tr></table></figure>
+
+<p>  <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=seo&fromid=102990&fr=aladdin">SEO详细</a></p>
+<p><strong>注意</strong> <strong>sitemap</strong>的搜索提示是默认开启的，如果要关闭它，可以在小程序配置文件<strong>project.config.json</strong>的<strong>setting</strong>中配置字段<strong>checksitemap</strong>为<strong>false</strong></p>
+<h4 id="5-页面的-json配置文件"><a href="#5-页面的-json配置文件" class="headerlink" title="5.页面的.json配置文件"></a>5.页面的.json配置文件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#小程序中的每一个页面，可以使用.<span class="property">json</span>文件来对本页面的窗口外观进行配置，页面中的配置会覆盖app.<span class="property">json</span>的<span class="variable language_">window</span>中相同的配置项。</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/22/html%E8%AF%AD%E8%A8%803/" class="archive-article-date">
-  	<time datetime="2022-04-22T00:13:16.643Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/04/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91.1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/21/html%E8%AF%AD%E8%A8%802/" class="archive-article-date">
-  	<time datetime="2022-04-21T07:00:20.115Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-21</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/19/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%915/" class="archive-article-date">
-  	<time datetime="2022-04-19T09:25:19.768Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-19</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2022/04/11/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%912/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/29/html%E8%AF%AD%E8%A8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/16/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%914/" class="archive-article-date">
-  	<time datetime="2022-04-16T15:03:09.459Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/12/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%913/" class="archive-article-date">
-  	<time datetime="2022-04-12T07:21:13.601Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-12</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/11/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%912/" class="archive-article-date">
-  	<time datetime="2022-04-11T08:02:07.775Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-11</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91.1/" class="archive-article-date">
-  	<time datetime="2022-04-06T14:54:19.846Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-06</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/03/29/html%E8%AF%AD%E8%A8%80/" class="archive-article-date">
-  	<time datetime="2022-03-29T07:49:40.163Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-29</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/03/24/%E5%85%B3%E4%BA%8EMarkdown%E7%BC%96%E8%BE%91%E5%99%A8Typora%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2022-03-24T08:50:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/24/%E5%85%B3%E4%BA%8EMarkdown%E7%BC%96%E8%BE%91%E5%99%A8Typora%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BD%BF%E7%94%A8/">关于Markdown编辑器Typora的基本语法使用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Typora</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/03/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2022-03-12T05:38:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/03/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -425,8 +425,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
